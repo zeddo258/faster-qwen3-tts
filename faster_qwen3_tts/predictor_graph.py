@@ -31,7 +31,7 @@ class PredictorGraph:
         codebook_tokens = mpg.run(pred_input)  # pred_input: [1, 2, H]
     """
 
-    def __init__(self, code_predictor, pred_config, talker_hidden_size, device='cuda:0', dtype=torch.bfloat16,
+    def __init__(self, code_predictor, pred_config, talker_hidden_size, device='cuda', dtype=torch.bfloat16,
                  do_sample=True, top_k=50, top_p=1.0, temperature=0.9):
         self.device = device
         self.dtype = dtype

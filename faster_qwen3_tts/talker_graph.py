@@ -24,7 +24,7 @@ class TalkerGraph:
     using the model's own forward with transformers StaticCache.
     """
 
-    def __init__(self, talker_model, talker_config, device='cuda:0', dtype=torch.bfloat16,
+    def __init__(self, talker_model, talker_config, device='cuda', dtype=torch.bfloat16,
                  max_seq_len=512):
         self.device = device
         self.dtype = dtype
